@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}About me{% endblock%} 
+
+{% block background %}{% load static %}{% static 'core/img/about.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Fernando</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+    <div class="row"> 
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid avatar" src="{% static 'core/img/avatar1.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Luis Fernando</h2>   
+            <p>Nací en el estado de Hidalgo, México en el año 1997.</p>
+            <p>Actualmente estudio la carrera de Ingeniería en Tecnologías de la Información en la Universidad tecnológica de Mineral de la Reforma.</p>
+            <p>Durante los últimos 2 años me he insteresado en temas como programación y desarrollo web y he desarrollado algunos proyectos los podrás ver en la parte de <a href="{% url 'portfolio' %}".>Portafolio</a></p>
+        </div>
+    </div>
+{% endblock%}
+    
